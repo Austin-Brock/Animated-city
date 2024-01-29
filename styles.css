@@ -173,3 +173,12 @@ body {
 .retrobg-vline { width: 3px; }
 .retrobg-hline + .retrobg-hline { margin-top: 98px; }
 .retrobg-vline + .retrobg-vline { margin-left: 48px; }
+
+#myImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100px; /* or any other size */
+    max-height: 100px; /* or any other size */
+    z-index: 10; /* to ensure it's above other elements */
+}
