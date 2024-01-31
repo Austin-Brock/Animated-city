@@ -1,0 +1,269 @@
+
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif; /* Default font for the body */
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif; /* Assuming you're using Roboto for headings */
+    color: black; /* A dark grey color for headings */
+    font-size: 24px; /* Example size for headings */
+}
+
+/* Applying font styles to paragraph text */
+p {
+    font-family: 'Open Sans', sans-serif; /* Assuming you're using Open Sans for paragraphs */
+    color: #555555; /* A lighter grey color for paragraph text */
+    font-size: 16px; /* Standard */
+}
+
+/* Style for the navigation bar */
+nav {
+    display: flex;          /* Set the display to flex */
+    justify-content: flex-end; /* Justify content to the right */
+    background-color: black; /* A blackbackground */
+    color: white;             /* White text for contrast */
+    padding: 10px;            /* Some padding around the text */
+}
+
+nav p {
+    margin: 0; /* Remove default margin to align properly */
+}
+
+/* Style for anchor tags in the navigation bar */
+nav a {
+    color: #fff;           /* White text color */
+    text-decoration: none; /* Removes the underline from links */
+    padding: 5px 10px;     /* Adds padding around the text for a better clickable area */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover state for anchor tags in the navigation bar */
+nav a:hover {
+    background-color: #ffffff; /* Darker shade of blue on hover */
+    color: #9236c7;            /* Change text color on hover for contrast */
+}
+
+/* Style for the footer */
+footer {
+    display: flex;             /* Set the display to flex */
+    justify-content: center;   /* Center the child elements horizontally */
+    align-items: center;       /* Center the child elements vertically */
+    background-color: #9236c7; /* A purple background */
+    color: #ffffff;            /* White text for contrast */
+    padding: 20px;             /* Padding for some space inside the footer */
+    text-align: center;        /* Center-align the content */
+}
+
+/* Style for anchor tags in the footer */
+footer a {
+    color: black;            /* A bright color for the links */
+    text-decoration: none;     /* Removes the underline from links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    margin: 0 10px;             /* Optional: Adds horizontal margin for spacing between links */
+}
+
+/* Hover state for anchor tags in the footer */
+footer a:hover {
+    color: #ffffff;            /* Changes text color to white on hover */
+    text-decoration: underline; /* Adds an underline on hover */
+}
+
+/* Style for the Austin-info section */
+.Austin-info {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 150px;             /* Padding around the content */
+    margin-bottom: 10px;       /* Space below the section */
+    text-align: center;
+    background-image: url(images/city\ backround\ 3.jpg);
+}
+
+/* Style for the about-austin section */
+.about-austin {
+    background-color: #e0e0e0; /* Slightly darker gray background */
+    padding: 10px;             /* Padding around the content */
+    margin-bottom: 10px;       /* Space below the section */
+    text-align: center;
+}
+.about-austin img {
+    border-radius: 40%;
+    max-width: 100%; /* Ensures the image is responsive and fits in its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+}
+
+/* Style for all anchor tags */
+a {
+    color: #1a0dab; /* Standard link blue color */
+    text-decoration: none; /* Removes the underline from links */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover state for all anchor tags */
+a:hover {
+    color: #ff4500; /* Change color on hover */
+    text-decoration: underline; /* Optionally add underline on hover for emphasis */
+}
+
+/* You can also have specific hover styles for links in specific sections */
+.Austin-info a:hover, .about-austin a:hover {
+    color: #9236c7; /* Different hover color for links in these sections */
+    /* Other styles like text-decoration can be added here if needed */
+}
+
+hr {
+    border-color: #9236c7; /* Sets the color of the border */
+    border-width: 2px;     /* Sets the width of the border */
+    border-style: solid;   /* Sets the style of the border */
+    margin: 20px 0;        /* Adds some space above and below the hr */
+}
+
+.about-austin hr {
+    border-color: #9236c7; /* Different color for hr in the .about-austin section */
+    border-width: 1px;     /* Different width for hr in the .about-austin section */
+    /* Other styles like border-style can be added or modified here if needed */
+}
+
+/* Style for the first image */
+.top-image-1 {
+    position: absolute;
+    top: 40px; /* Adjust these values as needed */
+    left: 40px; /* Adjust these values as needed */
+    width: 100px; /* Example width, adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the second image */
+.top-image-2 {
+    position: absolute;
+    top: 40px; /* Adjust these values as needed */
+    right: 40px; /* Adjust these values as needed */
+    width: 100px; /* Example width, adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for images in the Austin-info section */
+.Austin-info img {
+    border: 3px solid black; /* Sets a solid green border with 3px thickness */
+    border-radius: 10px;       /* Rounds the corners of the image */
+    width: 200px;              /* Example width, adjust as needed */
+    height: 200px;              /* Maintain aspect ratio */
+}
+
+/* Style for the card */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    border-radius: 10px; /* Optional: rounds the corners of the card */
+    background-color: #ffffff; /* Sets a white background color */
+    margin: 10px; /* Adds some space around the card */
+    padding: 15px; /* Adds some space inside the card */
+    max-width: 300px; /* Sets a maximum width for the card */
+    text-align: center; /* Centers the text inside the card */
+}
+
+.card img {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains the aspect ratio */
+    border-top-left-radius: 10px; /* Rounds the top left corner of the image */
+    border-top-right-radius: 10px; /* Rounds the top right corner of the image */
+}
+
+/* Style for the three-column layout */
+.three-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three equal-width columns */
+    grid-gap: 20px; /* Space between the grid items */
+    padding: 20px; /* Optional: Padding around the entire grid */
+    justify-content: center;
+}
+
+/* Responsive adjustments if needed */
+@media (max-width: 800px) {
+    .three-col {
+        grid-template-columns: 1fr; /* Stack the cards in a single column on smaller screens */
+    }
+}
+
+/* Style for the unordered list containing languages */
+ul.languages {
+    display: flex; /* Enables Flexbox */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 10px; /* Space between items */
+    list-style: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+}
+
+/* Style for each list item */
+ul.languages li {
+    background-color: #e0e0e0; /* Light gray background for each item */
+    padding: 5px 10px; /* Padding inside each item */
+    border-radius: 5px; /* Rounded corners for each item */
+}
+
+/* Style for the description list containing years and experience */
+dl.experience {
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between items */
+}
+
+/* Style for each term (dt) and description (dd) */
+dl.experience dt,
+dl.experience dd {
+    margin: 0; /* Removes default margin */
+    padding: 5px; /* Adds some padding */
+    background-color: #f0f0f0; /* Light background for each item */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Style for the skills list (assuming it's an unordered list) */
+ul.skills {
+    display: flex; /* Enables Flexbox */
+    flex-wrap: wrap; /* Allows list items to wrap to the next line */
+    gap: 10px; /* Space between items */
+    list-style: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+}
+
+/* Style for each list item (skill) */
+ul.skills li {
+    background-color: #f0f0f0; /* Light gray background for each item */
+    padding: 5px 10px; /* Padding inside each item */
+    border-radius: 5px; /* Rounded corners for each item */
+}
+
+/* Style for the one-col class */
+.one-col {
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Aligns children in a single column */
+    gap: 10px; /* Space between items */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically if the container is larger than the content */
+}
+
+/* Style for input fields and textarea */
+input[type="text"], input[type="email"], textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Adds padding inside the input fields for better readability */
+    margin: 8px 0; /* Adds margin above and below each input field */
+    display: inline-block; /* Ensures the inputs are properly aligned */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Slightly rounded borders for a modern look */
+    box-sizing: border-box; /* Makes sure padding and border don't increase the width */
+}
+
+/* Style for submit button */
+input[type="submit"] {
+    width: 100%; /* Full width */
+    background-color: #9236c7; /* Green background color */
+    color: white; /* White text */
+    padding: 14px 20px; /* Padding for a larger, more clickable area */
+    margin: 8px 0; /* Margin above and below */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded borders */
+    cursor: pointer; /* Cursor changes to a pointer to indicate it's clickable */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
