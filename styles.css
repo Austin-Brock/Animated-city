@@ -184,3 +184,40 @@ body {
   width: 300px;
   border-radius: 100%;
 }
+
+#projectCards {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around; /* This spreads out the cards */
+  width: 50%; /* Adjust as needed */
+  z-index: 20; /* Ensure it's above other elements */
+}
+
+.projectCard {
+  width: 30%; /* Adjust based on container width */
+  padding: 20px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  /* Add more styling as per your design */
+}
+
+/* Individual card styling (if necessary) */
+#card1 { /* specific styles for card 1 */ }
+#card2 { /* specific styles for card 2 */ }
+#card3 { /* specific styles for card 3 */ }
+
+@media (max-width: 600px) {
+  #projectCards {
+      flex-direction: column;
+      width: 90%;
+  }
+  .projectCard {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
