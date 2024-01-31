@@ -198,7 +198,7 @@ body {
 
 .projectCard {
   width: 30%; /* Adjust based on container width */
-  padding: 20px;
+  padding: 10px;
   margin: 10px;
   background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
   border-radius: 10px;
@@ -248,5 +248,9 @@ li {
   .projectCard {
       width: 100%;
       margin-bottom: 20px;
+      max-height: 120px;
   }
 }
+
+
+
