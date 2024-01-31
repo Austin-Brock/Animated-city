@@ -187,7 +187,7 @@ body {
 
 #projectCards {
   position: absolute;
-  top: 61%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -234,7 +234,7 @@ li {
   position: absolute;
   top: 10px; /* Adjust as needed */
   right: 10px; /* Adjust as needed */
-  color: #fff; /* Or any color you prefer */
+  color: #ff623f; /* Or any color you prefer */
   font-size: 24px; /* Adjust as needed */
   z-index: 30; /* Ensure it's above other elements */
   /* Add more styling as per your design */
