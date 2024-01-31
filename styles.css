@@ -176,13 +176,12 @@ body {
 
 #myImage {
   position: absolute;
-  top: 22%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10; /* ensures it's above other elements */
-  height: 200px;
-  width: 200px;
-  border-radius: 100%;
+    top: 75px; /* This should be adjusted based on the height of #nameTitle */
+    left: 10px; /* Align with the left edge of #nameTitle */
+    z-index: 10; /* Ensures it's above other elements */
+    height: 200px; /* Your specified dimensions */
+    width: 200px; /* Your specified dimensions */
+    border-radius: 100%; /* Your specified style */
 }
 
 #projectCards {
